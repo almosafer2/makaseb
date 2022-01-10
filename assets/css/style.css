@@ -31732,8 +31732,8 @@ header {
         padding-bottom: 1.25rem
     }
     .navbar[class*=navbar-bg-]:not(.fancy):not(.extended):not(.fixed) .navbar-collapse .nav-link {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem
     }
     .navbar.transparent:not(.fixed) {
         padding-top: .8rem
@@ -31767,7 +31767,7 @@ header {
         color: #fff
     }
     .navbar-other .nav-item.language-select .nav-link {
-        font-size: 1.05rem
+        font-size: 0.7rem
     }
     .navbar-other .nav-item .nav-link>i {
         font-size: calc(1.255rem + .06vw)
@@ -41329,4 +41329,22 @@ footer.bg-dark.angled.upper-start:before {
 
 footer .widget img {
     height: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-other {
+        background: #fff;
+        padding: 20px 30px 20px 10px;
+        border-radius: 0 60px 60px 0;
+        border-radius: 0 60px 60px 0;
+        margin-left: -16px;
+        box-shadow: 0 0 1.25rem rgb(30 34 40 / 4%);
+    }
+    .navbar .navbar-other .navbar-nav>.nav-item+.nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .language-select {
+        margin-left: 53px;
+    }
 }
