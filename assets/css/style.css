@@ -25003,13 +25003,13 @@ blockquote.text-center.icon-top:before {
 .post-meta li:before {
     content: "";
     display: inline-block;
-    width: .2rem;
-    height: .2rem;
-    border-radius: 100%;
-    margin: 0 .6rem 0;
-    vertical-align: .15rem;
+    width: 1px;
+    height: 1.2rem;
+    /* border-radius: 100%; */
+    margin: 0 0.6rem 0;
+    vertical-align: -0.3rem;
     background: #aab0bc;
-    opacity: .5
+    opacity: .5;
 }
 
 .post-meta li i {
@@ -33474,7 +33474,13 @@ button.hamburger.animate.active:after {
     cursor: -webkit-grab;
     cursor: -o-grab;
     cursor: -ms-grab;
-    cursor: grab
+    cursor: grab;
+}
+
+.owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .owl-carousel.owl-grab {
@@ -41347,4 +41353,27 @@ footer .widget img {
     .language-select {
         margin-left: 53px;
     }
+}
+
+.owl-carousel .owl-item {
+    float: right !important;
+}
+
+.owl-carousel .owl-wrapper-outer {
+    direction: rtl !important;
+}
+
+.owl-dots {
+    direction: rtl !important;
+}
+
+.owl-stage-outer {
+    direction: rtl !important;
+}
+
+.post-meta {
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
